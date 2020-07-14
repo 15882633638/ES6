@@ -5,7 +5,7 @@ function fun1(){
     // let变量有块级作用域
     for(let i = 0;i<10;i++){
         setTimeout(function(){
-            console.log(i)
+            console.log(new Date().getTime())
         },1000)
     }
     //0，1，2，3，4，5，6，7，8，9，10
@@ -26,4 +26,4 @@ const person = {
 // }
 // console.log(person)//这里会报错
 person.name = '哈和';
-console.log(person)
+console.log(person);
