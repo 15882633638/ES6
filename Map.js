@@ -3,7 +3,7 @@
 let Map1 = new Map();
 let sy1 = Symbol.for('kk');
 Map1.set(sy1,'哈哈');
-Map1.set('ske2','哈哈')
+Map1.set('ske2','哈哈');
 console.log(Map1.get(sy1));
 console.log(Map1.get('ske2'));
 //键名和键值是使用数组的形式存储，可以对里面的数据进行合并
@@ -20,7 +20,3 @@ console.log(merged);
 //4.原始的字典也可以转换为数组
 let Array1 = Array.from(Map1);
 console.log(Array1);
-
-
-
-
