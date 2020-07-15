@@ -32,7 +32,7 @@ let proxy = new Proxy(obj,{
     },
     set(target,key,newvalue){
         console.log(`setting${key}`);
-        target[key]=value;
+        target[key]=newvalue;
     }
 });
 console.log(proxy.a)
